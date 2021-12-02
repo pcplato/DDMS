@@ -5,7 +5,7 @@ require_once 'db_con.php';
 
 <div class="container-fluid">
 	<div class="row" id="wrapper">
-	<?php require_once'menubar.php';?>
+	<?php require_once'admin_menubar.php';?>
 	<div class="col-sm-12">
 		<div class="panel panel-default">
 		<div class="panel-body">

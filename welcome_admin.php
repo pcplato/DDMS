@@ -7,7 +7,7 @@
 
     <div class="container-fluid">
    <div class="row" id="wrapper">
-   <?php require_once'menubar.php';?>
+   <?php require_once'admin_menubar.php';?>
       <div class="col-md-10 col-md-offset-1">
 	  <br><br>
 	  <h2 style="font-family:Bernard MT Condensed; color:#06857C;">Admin Area</h2>
@@ -23,7 +23,7 @@
 					<a href="make_admin.php" class="btn btn-info btn-lg" style="width:200px;">
 						Make new admin
 					</a>
-					<a href="student.php" class="btn btn-info btn-lg" style="width:200px;">
+					<!-- <a href="student.php" class="btn btn-info btn-lg" style="width:200px;">
 						Student
 					</a>
 					<a href="teacher_insert.php" class="btn btn-info btn-lg" style="width:200px;">
@@ -40,17 +40,17 @@
 					</a>
 					<a href="biolab_insert.php" class="btn btn-info btn-lg" style="width:300px;">
 						Biomedical & Deep Learning LAB
-					</a>
+					</a> -->
 					</div>
 					
 					<div class="col-md-6">
 			 
-					<a href="course_insert.php" class="btn btn-info btn-lg" style="width:200px;">
-						Syllebus
+					<!-- <a href="course_insert.php" class="btn btn-info btn-lg" style="width:200px;">
+						Syllabus
 					</a>
 					<a href="room_insert.php" class="btn btn-info btn-lg" style="width:200px;">
 						Room
-					</a>
+					</a> -->
 					<a href="admin_log.php" class="btn btn-info btn-lg" style="width:200px;">
 						User Accounts
 					</a>
@@ -58,7 +58,7 @@
 					<a href="hall_insert.php" class="btn btn-info btn-lg" style="width:200px;">
 						Hall Information
 					</a>
-					<a href="library.php" class="btn btn-info btn-lg" style="width:250px;">
+					<!-- <a href="library.php" class="btn btn-info btn-lg" style="width:250px;">
 						Library Management
 					</a>
 					<a href="accounts_insert.php" class="btn btn-info btn-lg" style="width:250px;">
@@ -66,7 +66,7 @@
 					</a>
 					<a href="storeroom.php" class="btn btn-info btn-lg" style="width:300px;">
 						Store Management
-					</a>
+					</a> -->
 					</div>			
 
             </div>

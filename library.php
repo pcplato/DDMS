@@ -3,7 +3,7 @@
 
 <div class="container-fluid">
     <div class="row" id="wrapper">
-        <?php require_once'menubar.php';?>
+        <?php require_once'admin_menubar.php';?>
         <div class="col-sm-12">
             <div class="panel panel-default">
                 <div class="panel-body">
@@ -40,6 +40,7 @@
                             }
                         }
                      ?>
+                    
 
                         <form action="library.php" method="post" class="form-horizontal" role="form">
 
@@ -99,8 +100,61 @@
                             <br>
                         </form>
                     </div>
-
+                    <form method="post">
+                        <input type="textbox" name="str" required/>
+                        <input type="submit" name="submit2" value="Search"/>
+                    </form>
                     <?php
+                    
+                    if(isset($_POST['submit2'])){
+                         $str=mysqli_real_escape_string($conn,$_POST['str']);
+                         $sql1="select * FROM library WHERE book_name like '%$str%'";   
+                         $result1=mysqli_query($conn,$sql1);
+                         if(mysqli_num_rows($result1)>0){
+                             //while($row1=mysqli_fetch_assoc($result1)){
+                                echo "<table class='table table-bordered'>";
+                                echo "<thead>";
+                                echo "<tr>";
+                                echo "<th>ID</th>";
+                                echo "<th>Book Name</th>";
+                                echo "<th>Book Author</th>";
+                                echo "<th>Publisher</th>";
+                                echo "<th>Edition</th>";
+                                echo "<th>Quantity</th>";
+                                echo "<th>Borrowed</th>";
+                                echo "<th>Available</th>";
+                    
+                                echo "<th>Actions</th>";
+                                echo "</tr>";
+                                echo "</thead>";
+                                while($row1=mysqli_fetch_array($result1)){
+                                    echo "<tbody>";
+                                    echo "<tr class='success'>";
+                                    echo "<td>".$row1['book_id']."</td>";
+                                    echo "<td>".$row1['book_name']."</td>";
+                                    echo "<td>".$row1['book_author']."</td>";
+                                    echo "<td>".$row1['book_publisher']."</td>";
+                                    echo "<td>".$row1['book_edition']."</td>";
+                                    echo "<td>".$row1['book_quantity']."</td>";
+                                    echo "<td>".$row1['book_borrowed']."</td>";
+                                    echo "<td>".$row1['book_available']."</td>";
+                                   
+                                    echo '<td><a href="update_book.php?id=' . $row1['book_id'] . '"><b class="btn btn-warning">Update</b></a>' ;
+                                    echo '<a href="delete_book.php?id=' . $row1['book_id'] . '" onclick=\'return confirm("Are you sure you want to delete this record?")\'><b class="btn btn-danger">Delete</b></a></td>' ;
+                                    echo "</tr>";
+                                    echo "</tbody>";
+                                }
+                                echo "</table>";
+                             }
+                          else {
+                             echo "No data found";
+                         }
+                    }
+                    
+                
+                    ?>
+                  
+                     <?php
                     $sql1 = "SELECT * FROM library";
                     $result1 = mysqli_query($conn,$sql1);
                     echo "<table class='table table-bordered'>";
@@ -136,7 +190,7 @@
                         echo "</tbody>";
                     }
                     echo "</table>";
-                    ?>
+                    ?> 
 
 
                 </div>

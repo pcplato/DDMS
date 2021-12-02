@@ -72,14 +72,14 @@ if (isset($_POST['submit'])){
             <div class="form-group">
                 <label for="purchase_date" class="col-sm-2 control-label">Enter purchase date</label>
                 <div class="col-sm-7">
-                <input type="text" class="form-control" name="purchase_date" value="<?= $row['purchase_date']; ?>" >
+                <input type="date" class="form-control" name="purchase_date" value="<?= $row['purchase_date']; ?>" >
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="warranty_expiration_date" class="col-sm-2 control-label">Enter warranty expiration date</label>
                 <div class="col-sm-7">
-                    <input type="text" class="form-control" name="warranty_expiration_date" value="<?= $row['warranty_expiration_date']; ?>">
+                    <input type="date" class="form-control" name="warranty_expiration_date" value="<?= $row['warranty_expiration_date']; ?>">
                 </div>
             </div>
 
