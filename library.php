@@ -100,10 +100,14 @@
                             <br>
                         </form>
                     </div>
-                    <form method="post">
-                        <input type="textbox" name="str" required/>
-                        <input type="submit" name="submit2" value="Search"/>
-                    </form>
+                    
+                   
+                        <form method="post" style="float:right;">
+                            <input type="textbox" name="str" required/>
+                            <input type="submit" name="submit2" value="Search"/>
+                        </form>
+              
+                    
                     <?php
                     
                     if(isset($_POST['submit2'])){
@@ -127,7 +131,7 @@
                                 echo "<th>Actions</th>";
                                 echo "</tr>";
                                 echo "</thead>";
-                                while($row1=mysqli_fetch_array($result1)){
+                                while($row1=mysqli_fetch_assoc($result1)){
                                     echo "<tbody>";
                                     echo "<tr class='success'>";
                                     echo "<td>".$row1['book_id']."</td>";
