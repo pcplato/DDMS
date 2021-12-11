@@ -22,29 +22,29 @@
 		
 		//exit("hi<hr>");
 
-		/* if (isset($_FILES['image']['tmp_name'])) {
+		//if (isset($_FILES['image']['tmp_name'])) {
 
 			//exit("hi $user_check<hr>");
 			
-			$file=$_FILES['image']['tmp_name'];
-			$image= addslashes(file_get_contents($_FILES['image']['tmp_name']));
-			$image_name= addslashes($_FILES['image']['name']);
+			//-$file=$_FILES['image']['tmp_name'];
+			//-$image= addslashes(file_get_contents($_FILES['image']['tmp_name']));
+			//-$image_name= addslashes($_FILES['image']['name']);
 			
-			$image_type_arr = explode(".", $image_name);
-			$image_type = $image_type_arr[sizeof($image_type_arr) - 1];
-			$location="pics/" . $user_check . '.' .$image_type;
-			move_uploaded_file($_FILES["image"]["tmp_name"],$location); */
+			//-$image_type_arr = explode(".", $image_name);
+			//-$image_type = $image_type_arr[sizeof($image_type_arr) - 1];
+			//-$location="pics/" . $user_check . '.' .$image_type;
+			//-move_uploaded_file($_FILES["image"]["tmp_name"],$location);
 			
 			
-			//$caption=$_POST['caption'];
+			//-$caption=$_POST['caption'];
 			
-			//$save=mysqli_query($conn,"INSERT INTO users (image) VALUES ('$location')");
-			//header("location: index.php");
-			//exit();					
+			//-$save=mysqli_query($conn,"INSERT INTO users (image) VALUES ('$location')");
+			//-header("location: index.php");
+			//-exit();					
 			//}
-			if($name!=NULL && $fathers_name!=NULL && $mothers_name!=NULL && $present_address!=NULL && $permanent_address!=NULL && $age!=NULL && $roll_number!=NULL && $session!=NULL && $year!=NULL && $gpa!=NULL && $hall!=NULL && $location!=NULL){
+			if($name!=NULL && $fathers_name!=NULL && $mothers_name!=NULL && $present_address!=NULL && $permanent_address!=NULL && $age!=NULL && $roll_number!=NULL && $session!=NULL && $year!=NULL && $gpa!=NULL && $hall!=NULL){
 			
-			$sql = "UPDATE users SET name='$name',fathers_name='$fathers_name',mothers_name='$mothers_name',present_address='$present_address',permanent_address='$permanent_address',age='$age',roll_number='$roll_number',session='$session',year='$year',cgpa='$gpa',hall='$hall',image='$location' WHERE name = '$login_session'";
+			$sql = "UPDATE users SET name='$name',fathers_name='$fathers_name',mothers_name='$mothers_name',present_address='$present_address',permanent_address='$permanent_address',age='$age',roll_number='$roll_number',session='$session',year='$year',cgpa='$gpa',hall='$hall' WHERE name = '$login_session'";
 			
 			$result = mysqli_query($conn,$sql);
 			if($result){
@@ -178,15 +178,6 @@
 					</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="hall" name="hall" value="<?=$row['hall']; ?>" />
-					</div>
-				</div>
-				<div class="form-group">
-					 
-					<label for="image" class="col-sm-2 control-label">
-						Upload Image
-					</label>
-					<div class="col-sm-10">
-						<input type="file" class="form-control" id="image" name="image" />
 					</div>
 				</div>
 
