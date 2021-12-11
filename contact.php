@@ -11,11 +11,21 @@
     <hr>
 
 <div class="col-sm-4 col-sm-offset-4" style="height:430px;">
-        <p>Dept. of Computer Science and Engineering<br>
-        Islamic Unviersity, Kushtia-7003<br>
-             Bangladesh.<br>
-            
-            www.cseiu.ac.bd<br>
+        <p><b>Contact Information</b><br>
+            <br>
+            Mailing Address:<br>
+            3rd Floor, Science Faculty<br>
+            Islamic University<br>
+            Kushtia 7003, Bangladesh.<br>
+            <br>
+            Chairman<br>
+            Dept. of Computer Science and Engineering<br>
+            Islamic University, Kushtia, Bangladesh<br>
+            <br>
+            Mob : +880 1751639010<br>
+            Tel : +880-71-74901-12 Ext. 2313<br>
+            E-mail : chairman@cse.iu.ac.bd or aktaruzzaman@iu.ac.bd<br>
+            URL: www.cse.iu.ac.bd<br>
         </p>
 
 </div>
