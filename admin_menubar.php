@@ -50,7 +50,7 @@
                     <a href="library.php">Library Management</a>
                 </li>
                 <li>
-                    <a href="storeroom.php">Story Management</a>
+                    <a href="storeroom.php">Store Room Management</a>
                 </li>
             </ul>
 			
