@@ -1,29 +1,34 @@
 <?php
-	require_once 'db_con.php';
-	require_once 'header.php';
-	require_once 'admin_session.php';
+require_once 'db_con.php';
+require_once 'header.php';
+require_once 'admin_session.php';
 ?>
 
 
-    <div class="container-fluid">
-   <div class="row" id="wrapper">
-   <?php require_once'admin_menubar.php';?>
-      <div class="col-md-10 col-md-offset-1">
-	  <br><br>
-	  <h2 style="font-family:Bernard MT Condensed; color:#06857C;">Admin Area</h2>
-         <div class="panel panel-primary">
-		 <a href = "admin_logout.php" class="btn btn-warning" style="float:right;">Sign Out</a>
-            <div class="panel-body">
-				<center><p>Welcome - <?php echo "<b style='font-family:Bodoni MT Condensed;color:#053BC2; font-size:30px;'>".$login_session."</b>"; ?></p></center><br><br>
-				
-				<div class="col-lg-12">
-				
-					<div class="col-md-6">
-			 
-					<a href="make_admin.php" class="btn btn-info btn-lg" style="width:200px;">
-						Make new admin
-					</a>
-					<!-- <a href="student.php" class="btn btn-info btn-lg" style="width:200px;">
+<div class="container-fluid">
+	<div class="row" id="wrapper">
+		<?php require_once 'admin_menubar.php'; ?>
+		<div class="col-md-10 col-md-offset-1">
+			<br><br>
+			<h2 style="font-family:Bernard MT Condensed; color:#06857C;">Admin Area</h2>
+			<div class="panel panel-primary">
+				<a href="admin_logout.php" class="btn btn-warning" style="float:right;">Sign Out</a>
+				<div class="panel-body">
+					<center>
+						<p>Welcome - <?php echo "<b style='font-family:Bodoni MT Condensed;color:#053BC2; font-size:30px;'>" . $login_session . "</b>"; ?></p>
+					</center><br><br>
+
+					<div class="col-lg-12">
+
+						<div class="col-md-6">
+
+							<a href="make_admin.php" class="btn btn-info btn-lg" style="width:200px;">
+								Make new admin
+							</a>
+							<a href="teacher_insert.php" class="btn btn-info btn-lg" style="width:200px;">
+								Teacher
+							</a>
+							<!-- <a href="student.php" class="btn btn-info btn-lg" style="width:200px;">
 						Student
 					</a>
 					<a href="teacher_insert.php" class="btn btn-info btn-lg" style="width:200px;">
@@ -41,24 +46,24 @@
 					<a href="biolab_insert.php" class="btn btn-info btn-lg" style="width:300px;">
 						Biomedical & Deep Learning LAB
 					</a> -->
-					</div>
-					
-					<div class="col-md-6">
-			 
-					<!-- <a href="course_insert.php" class="btn btn-info btn-lg" style="width:200px;">
+						</div>
+
+						<div class="col-md-6">
+
+							<!-- <a href="course_insert.php" class="btn btn-info btn-lg" style="width:200px;">
 						Syllabus
 					</a>
 					<a href="room_insert.php" class="btn btn-info btn-lg" style="width:200px;">
 						Room
 					</a> -->
-					<a href="admin_log.php" class="btn btn-info btn-lg" style="width:200px;">
-						User Accounts
-					</a>
-					
-					<a href="hall_insert.php" class="btn btn-info btn-lg" style="width:200px;">
-						Hall Information
-					</a>
-					<!-- <a href="library.php" class="btn btn-info btn-lg" style="width:250px;">
+							<a href="admin_log.php" class="btn btn-info btn-lg" style="width:200px;">
+								User Accounts
+							</a>
+
+							<a href="hall_insert.php" class="btn btn-info btn-lg" style="width:200px;">
+								Hall Information
+							</a>
+							<!-- <a href="library.php" class="btn btn-info btn-lg" style="width:250px;">
 						Library Management
 					</a>
 					<a href="accounts_insert.php" class="btn btn-info btn-lg" style="width:250px;">
@@ -67,10 +72,11 @@
 					<a href="storeroom.php" class="btn btn-info btn-lg" style="width:300px;">
 						Store Management
 					</a> -->
-					</div>			
+						</div>
 
-            </div>
-         </div>
-         </div>
-      </div>
-   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
